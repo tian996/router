@@ -1,0 +1,35 @@
+$blue: #2082ed;
+$deepBlue: #185392;
+$errorRed: #ffa39e;
+$gap8: 8px;
+$btnOrange: #fb7b39;
+$flowBlockGroundColor: #f0f3f9;
+$sidebarIconBlue: #2562dc;
+
+$modalHeaderBGColor: #f2f3f6;
+$lightRed: #fe5353;
+
+// 计算间隙
+@function calcGap($gap, $count) {
+  @return $gap * $count;
+}
+
+// block间隙
+@mixin gap($gap: $gap8, $count: 1) {
+  padding: calcGap($gap, $count);
+}
+
+// 蓝色渐变
+@mixin blueGradient {
+  background: linear-gradient(90deg, rgba(24, 83, 146, 1) 0%, rgba(46, 131, 196, 1) 100%);
+}
+
+// 设置padding
+@mixin padding($direction, $gap) {
+  padding-#{$direction}: $gap;
+}
+
+// 设置padding
+@mixin margin($direction, $gap) {
+  margin-#{$direction}: $gap;
+}

@@ -1,0 +1,91 @@
+:global {
+    .ant-input[disabled],.ant-select-disabled{
+        color: #333;
+    }
+    .ant-input{
+        //兼容浏览器
+        line-height:1.5;
+    }
+    //时间选择框高度为36px的统一行高28px,兼容IE10
+    .ant-calendar-picker-input.ant-input{
+        line-height: 1.8;
+    }
+    table th, table td{
+        word-break: break-all;
+    }
+    //去掉InputNumber输入框增加/减少按钮
+    .ant-input-number-handler-wrap{
+        display: none;
+    }
+    .ant-table {
+        .ant-table-thead > tr > th {
+            line-height: 17px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            background: #F4F7FD;
+        }
+        .ant-table-tbody > tr > td {
+            line-height: 17px;
+            color: #333;
+        }
+        .ant-table-tbody > tr:hover > td {
+            background: none;
+        }
+        .ant-table-tbody > tr > td {
+            border-bottom: 1px solid #ddd;
+        }
+        .ant-table-tbody > tr:nth-of-type(2n) > td {
+            background: rgba(221, 221, 221, 0.1);
+        }
+    }
+    .ant-input, .ant-select, .ant-select-selection--single {
+        min-height: 36px;
+    }
+    .ant-select-selection__rendered {
+        height: 34px;
+        line-height: 34px;
+    }
+    .ant-select {
+        width: 220px;
+    }
+    .ant-calendar-picker {
+        width: 230px;
+    }
+    // 分页
+    .paginationBox {
+        padding: 20px 16px;
+        // text-align: right;
+        text-align: right;
+        .ant-pagination {
+            color: #666;
+            float: none;
+        }
+        .ant-pagination-total-text {
+            float: left;
+            color: #333;
+        }
+        .ant-pagination-item a {
+            color: #666;
+        }
+        // .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link {
+        //     border: none;
+        // }
+        // .ant-pagination-item {
+        //     border: none;
+        // }
+        .ant-select {
+            height: 24px;
+            color: #666;
+        }
+        .ant-pagination-item-active {
+            background: #2562DC;
+        }
+        .ant-pagination-item-active a {
+            color: #fff;
+        }
+        .ant-select-selection__rendered {
+            height: 24px;
+        }
+    }
+}
